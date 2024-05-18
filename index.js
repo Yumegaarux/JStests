@@ -52,4 +52,6 @@ function playGame(){
     else if (userScore == 3){
         statusLabel.textContent = "Good Game! You won!"
     }
+
+    
 }
