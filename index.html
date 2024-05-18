@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <label id="countLabel">0</label>
-    <div id="container">
-        <button id="decreaseBtn" class="controlBtn">Decrease</button>
-        <button id="resetBtn" class="controlBtn">Reset</button>
-        <button id="increaseBtn" class="controlBtn">Increase</button>
+    <Label id="title">Rock Paper Scissors!</Label>
+    <Label id="computerChoice"></Label>
+    <Label id="statusLabel">Pick a move!</Label>
+
+    <div id="btnContainer">
+        <button id="btnRock" class="controlBtn">Rock</button>
+        <button id="btnPaper" class="controlBtn">Paper</button>
+        <button id="btnScissors" class="controlBtn">Scissors</button>
+    </div>
+
+    <div id="scoreBoard">
+        <label id="userScoreLbl">Your score: 0</label>
+        <label id="computerScoreLbl">Computer score: 0</label>
     </div>
     <script src="index.js"></script>
 </body>

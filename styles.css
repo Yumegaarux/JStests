@@ -1,26 +1,51 @@
-#countLabel{
+#title{
     display: block;
     text-align: center;
-    font-size: 100px;
+    font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#container{
+#statusLabel{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#btnContainer{
     text-align: center;
 }
 
 .controlBtn{
     padding: 10px 10px 10px 10px;
-    background-color: yellow;
     border-style: none;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
-    transition: background-color 0.25s ;
+}
+
+#btnRock{
+    background-color: rgb(201, 125, 67);
+}
+
+#btnPaper{
+    background-color: white;
+}
+
+#btnScissors{
+    background-color: silver;
 }
 
 .controlBtn:hover{
-    background-color: rgb(235, 235, 0);
+    padding: 11px 11px 11px 11px;
+    transition: 0.25s;
+}
+
+
+#scoreBoard{
+    margin-top: 50px;
+    display: block;
+    text-align: center;
 }
 
 

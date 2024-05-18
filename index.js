@@ -1,22 +1,47 @@
-const decreaseBtn = document.getElementById("decreaseBtn");
-const resetBtn = document.getElementById("resetBtn");
-const increaseBtn = document.getElementById("increaseBtn");
+const btnRock = document.getElementById("btnRock");
+const btnPaper = document.getElementById("btnPaper");
+const btnScissors = document.getElementById("btnScissors");
+const statusLabel = document.getElementById("statusLabel");
+const userScoreLbl = document.getElementById("userScoreLbl");
+const computerScoreLbl = document.getElementById("computerScoreLbl");
 
-const countLabel = document.getElementById("countLabel");
+let userChoice = 0;
+let userScore = 0;
+let computerScore = 0;
 
-let count = 0;
-
-increaseBtn.onclick = function(){
-    count++;
-    countLabel.textContent = count;
+btnRock.onclick = function(){
+    userChoice = 1;
+    playGame();
 } 
-
-decreaseBtn.onclick = function(){
-    count--;
-    countLabel.textContent = count;
+btnPaper.onclick = function(){
+    userChoice = 2;
+    playGame();
+}
+btnScissors.onclick = function(){
+    userChoice = 3;
+    playGame();
 }
 
-resetBtn.onclick = function(){
-    count = 0;
-    countLabel.textContent = count
+function playGame(){
+    let computerChoice = Math.floor(Math.random() * 3) + 1;
+
+    if (userChoice == computerChoice){
+        statusLabel.textContent = "It's a draw!";
+    }
+
+    else if (
+        (userChoice == 1 && computerChoice == 3) || 
+        (userChoice == 2 && computerChoice == 1) || 
+        (userChoice == 3 && computerChoice == 2)
+    ){
+        statusLabel.textContent = "You win!";
+        userScore++;
+        userScoreLbl.textContent = "Your Score: " + userScore;
+    }
+
+    else{
+        statusLabel.textContent = "You Lose!";
+        computerScore++;
+        computerScoreLbl.textContent = "Computer Score: " + computerScore;
+    }
 }
