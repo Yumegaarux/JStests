@@ -44,4 +44,12 @@ function playGame(){
         computerScore++;
         computerScoreLbl.textContent = "Computer Score: " + computerScore;
     }
+
+    if (computerScore == 3){
+        statusLabel.textContent = "Well played! Better luck next time"
+    }
+
+    else if (userScore == 3){
+        statusLabel.textContent = "Good Game! You won!"
+    }
 }
