@@ -1,0 +1,27 @@
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#screen{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#container{
+    text-align: center;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 40px 0px 40px;
+    margin-inline: 40%;
+}
+
+.btn{
+    border-radius: 100px;
+    background-color: black;
+    color: yellow;
+    height: 30px;
+    width: 40px;
+}
+
