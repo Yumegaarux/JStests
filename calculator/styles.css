@@ -23,5 +23,6 @@ html{
     color: yellow;
     height: 30px;
     width: 40px;
+    cursor: pointer;
 }
 
