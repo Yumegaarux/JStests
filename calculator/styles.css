@@ -5,10 +5,11 @@ html{
 #screen{
     border: none;
     background-color: black;
-    color: white;
+    color: rgb(246, 255, 0);
     width: 97.5%;
     height: 100px;
     text-align: center;
+    font-size: larger;
     margin-bottom: 25px;
 }
 

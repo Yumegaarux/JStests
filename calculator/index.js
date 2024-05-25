@@ -5,6 +5,10 @@ function inputCalculator(selectedNum){
     screenNum.value += selectedNum;
 }
 
-function inputDelete(){
-    screenNum.value--;
+function calculate(){
+    screenNum.value = eval(screenNum.value);
+}
+
+function clearScreen(){
+    screenNum.value = "";
 }
